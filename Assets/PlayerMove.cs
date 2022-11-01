@@ -25,37 +25,21 @@ public class PlayerMove : MonoBehaviour
 
         Vector3 pos = transform.position;
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D))
         {
             pos.x += 0.3f;
-            if (Input.GetKey(KeyCode.D))
-            {
-                pos.x -= 0.05f;
-            }
         }
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A))
         {
             pos.x -= 0.3f;
-            if (Input.GetKey(KeyCode.D))
-            {
-                pos.x += 0.05f;
-            }
         }
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.W))
         {
             pos.y += 0.3f;
-            if (Input.GetKey(KeyCode.D))
-            {
-                pos.y -= 0.05f;
-            }
         }
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.S))
         {
             pos.y -= 0.3f;
-            if (Input.GetKey(KeyCode.D))
-            {
-                pos.y += 0.05f;
-            }
         }
         transform.position = new Vector3(pos.x, pos.y, pos.z);
 

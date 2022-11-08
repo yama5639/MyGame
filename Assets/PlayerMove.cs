@@ -36,7 +36,7 @@ public class PlayerMove : MonoBehaviour
             //pos.x -= 0.3f;
             velocity.x = -0.3f;
         }
-        velocity.z = 0.1f;
+        velocity.z = 1.0f;
         //if (Input.GetKey(KeyCode.W))
         //{
         //    //pos.y += 0.3f;

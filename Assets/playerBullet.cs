@@ -16,12 +16,9 @@ public class playerBullet : MonoBehaviour
     {
         Vector3 pos = transform.position;
         //rb.velocity = transform.forward * 5;
-        pos.z += 0.5f;
+        pos.z += .0f;
         transform.position = new Vector3(pos.x, pos.y, pos.z);
-        if (pos.z >= 200)
-        {
-            Destroy(this.gameObject);
-        }
+        
     }
 
     private void OnTriggerEnter(Collider other)

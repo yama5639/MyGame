@@ -15,20 +15,20 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(nextScene);
     }
-    private int coinCount;
+    private int enemyCount;
     private void Start()
     {
-        coinCount = 0;
+        enemyCount = 0;
         Application.targetFrameRate = 60;
-        coinCount = 0;
+        enemyCount = 0;
         Screen.SetResolution(1920, 1080, false);
         Application.targetFrameRate = 60;
-        coinCount = 0;
+        enemyCount = 0;
     }
     public Text textComponent;
     public void AddCoinCount()
     {
-        coinCount = coinCount + 1;
-        textComponent.text = "CoinCount : " + coinCount;
+        enemyCount = enemyCount + 1;
+        textComponent.text = "enemyCount : " + enemyCount;
     }
 }

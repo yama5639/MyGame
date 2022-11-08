@@ -9,7 +9,8 @@ public class PlayerShot : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(Bullet, transform.position, Quaternion.identity);
+            //Instantiate(Bullet, transform.position, Quaternion.identity);
+            Instantiate(Bullet, transform.position, transform.rotation);
         }
     }
 }

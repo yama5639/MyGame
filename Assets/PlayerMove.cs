@@ -24,24 +24,36 @@ public class PlayerMove : MonoBehaviour
         }
 
         Vector3 pos = transform.position;
+        var velocity = Vector3.zero;
 
         if (Input.GetKey(KeyCode.D))
         {
-            pos.x += 0.3f;
+            //pos.x += 0.3f;
+            velocity.x = 0.3f;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            pos.x -= 0.3f;
+            //pos.x -= 0.3f;
+            velocity.x = -0.3f;
         }
-        if (Input.GetKey(KeyCode.W))
+        velocity.z = 0.1f;
+        //if (Input.GetKey(KeyCode.W))
+        //{
+        //    //pos.y += 0.3f;
+        //    velocity.z = 0.3f;
+        //}
+        //if (Input.GetKey(KeyCode.S))
+        //{
+        //    //pos.y -= 0.3f;
+        //    velocity.z = -0.3f;
+        //}
+        if (velocity.x != 0 || velocity.z != 0)
         {
-            pos.y += 0.3f;
+            transform.position += transform.rotation * velocity;
         }
-        if (Input.GetKey(KeyCode.S))
-        {
-            pos.y -= 0.3f;
-        }
-        transform.position = new Vector3(pos.x, pos.y, pos.z);
+        //transform.position = new Vector3(pos.x, pos.y, pos.z);
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        transform.rotation = Quaternion.LookRotation(ray.direction);
 
     }
     public void Damage()

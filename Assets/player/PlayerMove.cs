@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    private int playerHP;
+    public int playerHP = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -58,5 +58,19 @@ public class PlayerMove : MonoBehaviour
     }
     public void Damage()
     {
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        //Debug.Break();
+        Debug.Log("Terrain");
+        playerHP = 0;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        //Debug.Break();
+        Debug.Log("Terrain");
+        playerHP = 0;
     }
 }

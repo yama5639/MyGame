@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {
     public int playerHP = 1;
+    public GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +16,11 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if (playerHP <= 0)
+        //{
+        //    gameManager.ChangeScene("GameoverScene");
+        //}
+
         if (Input.GetKeyDown(KeyCode.U))
         {
             GetComponent<BoxCollider>().enabled = false;
@@ -36,7 +43,7 @@ public class PlayerMove : MonoBehaviour
             //pos.x -= 0.3f;
             velocity.x = -0.3f;
         }
-        velocity.z = 1.0f;
+        velocity.z = 0.2f;
         //if (Input.GetKey(KeyCode.W))
         //{
         //    //pos.y += 0.3f;
@@ -63,14 +70,9 @@ public class PlayerMove : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         //Debug.Break();
-        Debug.Log("Terrain");
-        playerHP = 0;
+        //playerHP = 0;
+        gameManager.ChangeScene("GameoverScene");
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        //Debug.Break();
-        Debug.Log("Terrain");
-        playerHP = 0;
-    }
+    
 }

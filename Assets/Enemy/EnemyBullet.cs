@@ -29,10 +29,10 @@ public class EnemyBullet : MonoBehaviour
         rb.velocity = forwardAxis * forward * speed;
         rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, rb.velocity.z);
         time -= Time.deltaTime;
-        //if(time <= 0)
-        //{
-        //    Destroy(this.gameObject);
-        //}
+        if (time <= 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     void OnTriggerEnter(Collider other)

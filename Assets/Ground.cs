@@ -20,13 +20,13 @@ public class Ground : MonoBehaviour
     {
         //Debug.Break();
         Debug.Log("Terrain");
-      
+        //Destroy(this.gameObject);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         //Debug.Break();
         Debug.Log("Terrain");
-        
+        //Destroy(this.gameObject);
     }
 }

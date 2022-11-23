@@ -5,10 +5,13 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     private int enemyHp;
+    public GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
-        enemyHp = 3;
+        //GameObject gameObject = GameObject.Find("GameManager");
+        //gameManager = managerObject.GetComponent<GameManager>();
+        enemyHp = 1;
     }
 
     // Update is called once per frame
@@ -16,6 +19,7 @@ public class Enemy : MonoBehaviour
     {
         if (enemyHp <= 0)
         {
+            gameManager.AddEnemyCount();
             Destroy(this.gameObject);
         }
     }
@@ -23,5 +27,7 @@ public class Enemy : MonoBehaviour
     public void Damage()
     {
         enemyHp = enemyHp - 1;
+        
     }
+    
 }

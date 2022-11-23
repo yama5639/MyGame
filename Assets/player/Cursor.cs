@@ -18,7 +18,7 @@ public class Cursor : MonoBehaviour
     void Update()
     {
         mouse = Input.mousePosition;
-        target = Camera.main.ScreenToWorldPoint(new Vector3(mouse.x, mouse.y, 10));
+        target = Camera.main.ScreenToWorldPoint(new Vector3(mouse.x, mouse.y, 40));
         this.transform.position = target;
     }
 }

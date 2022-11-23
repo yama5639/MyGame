@@ -14,11 +14,13 @@ public class playerBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 pos = transform.position;
-        //rb.velocity = transform.forward * 5;
-        pos.z += .0f;
-        transform.position = new Vector3(pos.x, pos.y, pos.z);
-        
+        var vel = Vector3.zero;
+        vel.y += 0.2f;
+        vel.z += 3.0f;
+        if (vel.x != 0 || vel.z != 0)
+        {
+            transform.position += transform.rotation * vel;
+        }
     }
 
     private void OnTriggerEnter(Collider other)

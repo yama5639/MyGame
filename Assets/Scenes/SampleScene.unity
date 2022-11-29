@@ -5224,6 +5224,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &354387061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3732068532411223722, guid: af470a6447fc03d4b8a2f4159d28585a, type: 3}
+  m_PrefabInstance: {fileID: 1430149267}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &354387062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354387061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcc5aa9fecd0e974f9bf7f086bcd2b75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1408455703891716615, guid: 73fcc5d7a97ee454f85edd69c1616fda, type: 3}
+  speed: 10
+  time: 1
+  delayTime: 1
 --- !u!1001 &355541047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5354,6 +5375,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 370874713}
+--- !u!114 &398493730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398493710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcc5aa9fecd0e974f9bf7f086bcd2b75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1408455703891716615, guid: 73fcc5d7a97ee454f85edd69c1616fda, type: 3}
+  speed: 5
+  time: 1
+  delayTime: 1
+--- !u!1 &545822930 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3732068532411223722, guid: af470a6447fc03d4b8a2f4159d28585a, type: 3}
+  m_PrefabInstance: {fileID: 759293438}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &545822936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545822930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcc5aa9fecd0e974f9bf7f086bcd2b75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1408455703891716615, guid: 73fcc5d7a97ee454f85edd69c1616fda, type: 3}
+  speed: 5
+  time: 1
+  delayTime: 1
 --- !u!1 &579230878
 GameObject:
   m_ObjectHideFlags: 0
@@ -5835,6 +5893,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af470a6447fc03d4b8a2f4159d28585a, type: 3}
+--- !u!1 &921661008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3732068532411223722, guid: af470a6447fc03d4b8a2f4159d28585a, type: 3}
+  m_PrefabInstance: {fileID: 921661007}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &921661009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921661008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcc5aa9fecd0e974f9bf7f086bcd2b75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1408455703891716615, guid: 73fcc5d7a97ee454f85edd69c1616fda, type: 3}
+  speed: 5
+  time: 1
+  delayTime: 1
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -6008,6 +6087,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1064349270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3732068532411223722, guid: af470a6447fc03d4b8a2f4159d28585a, type: 3}
+  m_PrefabInstance: {fileID: 355541047}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1064349277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064349270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0867094d2073914181439788d78e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1408455703891716615, guid: 73fcc5d7a97ee454f85edd69c1616fda, type: 3}
+  bulletWayNum: 3
+  bulletWaySpace: 30
+  time: 3
+  delayTime: 1
 --- !u!1 &1070508019
 GameObject:
   m_ObjectHideFlags: 0
@@ -6088,6 +6189,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070508019}
   m_CullTransparentMesh: 1
+--- !u!1 &1121941390 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3732068532411223722, guid: af470a6447fc03d4b8a2f4159d28585a, type: 3}
+  m_PrefabInstance: {fileID: 1690622730}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1121941397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121941390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0867094d2073914181439788d78e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1408455703891716615, guid: 73fcc5d7a97ee454f85edd69c1616fda, type: 3}
+  bulletWayNum: 3
+  bulletWaySpace: 30
+  time: 3
+  delayTime: 1
 --- !u!1 &1277132508
 GameObject:
   m_ObjectHideFlags: 0
@@ -6102,6 +6225,7 @@ GameObject:
   - component: {fileID: 1277132511}
   - component: {fileID: 1277132510}
   - component: {fileID: 1277132509}
+  - component: {fileID: 1277132515}
   m_Layer: 0
   m_Name: Enemy (2)
   m_TagString: Enemy
@@ -6209,13 +6333,30 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1277132508}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.5, y: 0, z: 26.8}
+  m_LocalPosition: {x: -23.5, y: -28.9, z: 26.8}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1277132515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277132508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0867094d2073914181439788d78e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1408455703891716615, guid: 73fcc5d7a97ee454f85edd69c1616fda, type: 3}
+  bulletWayNum: 3
+  bulletWaySpace: 30
+  time: 3
+  delayTime: 1
 --- !u!1001 &1430149267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6611,6 +6752,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af470a6447fc03d4b8a2f4159d28585a, type: 3}
+--- !u!1 &1743420761 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3732068532411223722, guid: af470a6447fc03d4b8a2f4159d28585a, type: 3}
+  m_PrefabInstance: {fileID: 173255098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1743420767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743420761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcc5aa9fecd0e974f9bf7f086bcd2b75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1408455703891716615, guid: 73fcc5d7a97ee454f85edd69c1616fda, type: 3}
+  speed: 5
+  time: 1
+  delayTime: 1
 --- !u!1 &1753782188
 GameObject:
   m_ObjectHideFlags: 0
@@ -6723,6 +6885,7 @@ GameObject:
   - component: {fileID: 1756986697}
   - component: {fileID: 1756986696}
   - component: {fileID: 1756986695}
+  - component: {fileID: 1756986701}
   m_Layer: 0
   m_Name: Enemy (1)
   m_TagString: Enemy
@@ -6830,13 +6993,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756986694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.3, y: 13, z: 26.8}
+  m_LocalPosition: {x: 29.6, y: 13, z: 26.8}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1756986701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756986694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcc5aa9fecd0e974f9bf7f086bcd2b75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1408455703891716615, guid: 73fcc5d7a97ee454f85edd69c1616fda, type: 3}
+  speed: 5
+  time: 1
+  delayTime: 1
 --- !u!1 &1813339353
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 {
     public GameManager gameManager;
     public int playerHP = 1;
+    public Image image;
+    private Sprite sprite;
     public void SceneReset()
     {
         string activeSceneName = SceneManager.GetActiveScene().name;
@@ -34,16 +36,39 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        
+        if (enemyCount == 1)
+        {
+            sprite = Resources.Load<Sprite>("1");
+            
+        }
+        if (enemyCount == 2)
+        {
+            sprite = Resources.Load<Sprite>("2");
+            
+        }
+        if (enemyCount == 3)
+        {
+            sprite = Resources.Load<Sprite>("3");
+            
+        }
+        if (enemyCount == 4)
+        {
+            sprite = Resources.Load<Sprite>("4");
+            
+        }
         if (enemyCount == 5)
         {
             gameManager.ChangeScene("ClearScene");
         }
+        image = this.GetComponent<Image>();
+        
     }
 
     public Text textComponent;
     public void AddEnemyCount()
     {
         enemyCount = enemyCount + 1;
-        textComponent.text = "Œ‚”j : " + enemyCount;
+        //textComponent.text = "Œ‚”j : " + enemyCount;
     }
 }

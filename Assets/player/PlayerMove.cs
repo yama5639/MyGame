@@ -65,6 +65,7 @@ public class PlayerMove : MonoBehaviour
     }
     public void Damage()
     {
+        playerHP = playerHP -1;
     }
 
     private void OnCollisionEnter(Collision collision)

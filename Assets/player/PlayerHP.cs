@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class PlayerHP : MonoBehaviour
 {
-    private int playerHP;
+    public GameManager gameManager;
+    public int playerHP;
     // Start is called before the first frame update
     void Start()
     {
-        playerHP = 20;
+        playerHP = 1;
     }
 
     // Update is called once per frame
@@ -16,7 +17,8 @@ public class PlayerHP : MonoBehaviour
     {
         if (playerHP <= 0)
         {
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
+            //gameManager.ChangeScene("GameoverScene");
         }
     }
 
@@ -25,6 +27,12 @@ public class PlayerHP : MonoBehaviour
         if (other.gameObject.tag == "EnemyBullet")
         {
             playerHP = playerHP - 1;
+            if (playerHP <= 0)
+            {
+                gameManager.ChangeScene("GameoverScene");
+            }
+            
         }
     }
+
 }

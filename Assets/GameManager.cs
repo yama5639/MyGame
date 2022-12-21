@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameManager gameManager;
-    public int playerHP = 1;
+    
     public Image image;
     private Sprite sprite;
     public void SceneReset()
@@ -25,13 +25,14 @@ public class GameManager : MonoBehaviour
 
     }
     private int enemyCount;
+    private int playerhpCount;
     private void Start()
     {
         Screen.SetResolution(1920, 1080, false);
         Application.targetFrameRate = 60;
 
         enemyCount = 0;
-
+        playerhpCount = 300;
     }
 
     private void Update()
@@ -66,9 +67,15 @@ public class GameManager : MonoBehaviour
     }
 
     public Text textComponent;
+    public Text textComponent2;
     public void AddEnemyCount()
     {
         enemyCount = enemyCount + 1;
-        //textComponent.text = "Œ‚”j : " + enemyCount;
+        textComponent.text = " " + enemyCount;
+    }
+    public void AddPlayerhpCount()
+    {
+        playerhpCount = playerhpCount - 10;
+        textComponent2.text = " " + playerhpCount;
     }
 }

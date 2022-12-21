@@ -9,8 +9,9 @@ public class MainCamera : MonoBehaviour
 
     void LateUpdate()
     {
-        var adjustment = new Vector3(0.0f, 2.0f, -5.0f);
-        GetComponent<Transform>().position = sphere.position + adjustment;
-        GetComponent<Transform>().rotation = sphere.rotation;
+        //var adjustment = new Vector3(0.0f, 2.0f, -5.0f);
+        //GetComponent<Transform>().position = sphere.position + adjustment;
+        //GetComponent<Transform>().rotation = sphere.rotation;
+
     }
 }
